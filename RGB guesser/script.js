@@ -4,6 +4,7 @@ var buttons3 = document.querySelector(".btn3");
 var buttons4 = document.querySelector(".btn4");
 var buttons5 = document.querySelector(".btn5");
 var buttons6 = document.querySelector(".btn6");
+var buttons = document.querySelectorAll(".button");
 var button_reset = document.querySelector(".restart_btn");
 var napis = document.querySelector(".rgb");
 var correct_color;
@@ -47,7 +48,6 @@ function pickWinner(){
     winning_btn.addEventListener("click",function() {
         napis.innerHTML = "CORRECT";
         document.body.style.backgroundColor = correct_color;
+        winning_btn.style.backgroundColor = correct_color;
     })
-
-
 }
